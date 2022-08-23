@@ -1,0 +1,59 @@
+body {
+    background: rgb(34, 1, 56);
+    color: #222;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+}
+
+div.cabeca {
+    text-align: center;
+}
+
+div.botao{
+    align-items: center;
+    gap: 40px;
+    display: flex;
+    height: 68px;
+    padding: 0  40vw;
+}
+
+
+div.cabeca img {
+    height: 200px;
+    object-fit: contain;
+    width: 200px;
+}
+
+div.campo {
+    padding: 0 20vw;
+}
+
+div.postagem {
+    background: #fff;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 32px;
+    border-radius: 15px;
+}
+
+div.postagem-nome {
+    color: blue;
+    font-size: 26px;
+    padding: 16px;
+    text-transform: capitalize;
+}
+
+div.postagem-descricao {
+    padding: 0 16px;
+    text-transform: lowercase;
+}
+
+div.postagem-conteudo img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+div.deletar{
+    text-align: center;
+    
+}

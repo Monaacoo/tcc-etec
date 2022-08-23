@@ -1,0 +1,42 @@
+doctype html
+html 
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Cadastro
+        link(rel="stylesheet", href="styleCadastro.css")
+    body 
+form(action="/cadastro", method= "post")  
+
+    div(class="header")
+        h1 Cadastrar-se
+
+    div(class="main")
+        div(class="post")
+            div(class="post-title") Cadastro 
+            div(class="post-content")
+                input(type="text", name="nome", maxlength="100", placeholder="nome", required)
+            
+        div(class="post")
+            div(class="post-content")
+                input(type="text", name="email", maxlength="100", placeholder="email", required)
+            
+        div(class="post")
+            div(class="post-content")
+                input(type="text", name="nickname", maxlength="100", placeholder="nickname", required)
+            
+        div(class="post")
+            div(class="post-content")
+                input(type="password", name="senha", maxlength="100", placeholder="senha", required)
+            
+        div(class="post")   
+            div(class="post-content") 
+                 input(type="submit", value="Cadastrar")
+                
+        a(href="/")  Incio  
+
+    
+    
+
+    

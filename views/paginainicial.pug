@@ -1,0 +1,29 @@
+doctype html 
+html 
+
+    head 
+        title DISS  
+        link(rel="stylesheet", href="/style.css")
+
+    body 
+
+        div(class="cabeca")
+            img(src="/logo.png", alt="logo")
+                    
+        div(class="botao")
+            a(href="/perfil")  Perfil  
+            a(href="/postagem")  Postar
+            a(href="/cadastro")  Cadastrar
+        
+        div(class="campo")
+
+            each resultado in resultados
+
+                div(class="postagem")
+                    div(class="postagem-nome") #{resultado.autor}
+                    div(class="postagem-descricao") #{resultado.descricao}
+                    div(class="postagem-conteudo")
+                        img(src=resultado.imagem, alt="conteudo")
+                    div(class="deletar")
+                        a(href=`/deletar/${resultado.codigo}`) Deletar
+                    
